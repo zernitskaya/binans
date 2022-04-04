@@ -1,100 +1,62 @@
-.main {
-  color: #000;
-}
-
 .main__wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 170px;
+}
 
-  @include media-lg {
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 90px;
+  width: 100%;
+
+  @include media-exsm {
     flex-direction: column;
+    padding-bottom: 20px;
   }
 }
 
-.main__left {
-  width: 50%;
+.main__form-wrap {
+  flex-grow: 1;
+  max-width: 402px;
 
-  @include media-lg {
-    width: 100%;
+  @include media-exsm {
+  width: 100%;
+  margin: auto;
   }
 }
 
-.main__right {
-  width: 50%;
+.main__bottom-text {
+  padding-bottom: 100px;
+}
 
-  @include media-lg {
-    width: 100%;
+.main__heading-wrap {
+  text-align: center;
+  margin-bottom: 80px;
+
+  @include media-exsm {
+    margin-bottom: 20px;
   }
 }
 
 .main__heading {
-  font-size: 30px;
+  color: #2d344e;
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.main__text {
   text-transform: uppercase;
-  padding-bottom: 40px;
-
-  @include media-lg {
-    font-size: 24px;
-  }
+  color: #fff;
+  font-size: 49px;
+  font-weight: 700;
 
   @include media-exsm {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
-.main__red {
-  position: relative;
-  color: #39ab5c;
-  font-weight: bold;
-
-  &:hover .main__color-title {
-    display: block;
-  }
-}
-
-.main__color-title {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 280px;
-  border-radius: 4px;
-  border: 1px solid #000;
-  padding: 20px;
-  background-color: #fff;
-  font-size: 12px;
-  display: none;
-  color: #000;
-}
-
-.main__img {
-  width: 100%;
-}
-
-.main__text-green {
-  display: flex;
-  padding: 30px;
-  font-size: 20px;
-  text-transform: uppercase;
-
-  @include media-exsm {
-    padding-left: 0;
-  }
-
-  @include media-exsm {
-    display: block;
-  }
-}
-
-.main__green {
-  color: #39ab5c;
-  font-weight: bold;
-  padding-left: 4px;
-}
-
-.main__arrow {
-  margin-top: -14px;
-
-  @include media-exsm {
-    display: none;
-  }
+.main__text-yellow {
+color: #F3C218;
 }

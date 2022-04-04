@@ -1,0 +1,43 @@
+.form {
+  width: 475px;
+  background-color: #00000063;
+  padding: 40px 40px 0 40px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.form__logo-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form__text {
+  text-align: center;
+  font-size: 27px;
+  line-height: 1.4;
+  font-weight: 700;
+
+  @include media-exsm {
+    font-size: 18px;
+  }
+}
+
+.form__text-small {
+  font-size: 19px;
+  text-align: center;
+  padding-top: 23px;
+
+  @include media-exsm {
+    font-size: 14px;
+  }
+}
+
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  & > * {
+    margin: 20px 0;
+  }
+}
+
