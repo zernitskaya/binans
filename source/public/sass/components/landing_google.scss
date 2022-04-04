@@ -1,0 +1,145 @@
+.landing_google {
+  background-image: url("../img/man.jpg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  position: relative;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  color: #fff;
+}
+
+.landing_google__img-google {
+  max-width: 90%;
+}
+
+.landing_google::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000078;
+}
+
+.landing_google__wrap {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+}
+
+.landing_google__top-img-wrap {
+  width: 100%;
+
+  @include media-exsm {
+    padding-bottom: 31px;
+  }
+}
+
+.landing_google__button-wrap {
+  position: fixed;
+  z-index: 7;
+  bottom: 30px;
+  right: 30px;
+}
+
+.landing_google__bottom-side {
+  display: flex;
+  flex-grow: 1;
+
+  @include media-exsm {
+    flex-direction: column;
+  }
+}
+
+.landing_google__left-wrap {
+  @include media-exsm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.landing_google__right-wrap {
+  width: 60%;
+  align-self: flex-end;
+  flex-shrink: 0;
+
+  @include media-xl {
+    width: 50%;
+  }
+
+  @include media-exsm {
+    width: 100%;
+  }
+}
+
+.landing_google__heading {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 100;
+  padding-top: 12px;
+  padding-bottom: 55px;
+  width: 800px;
+
+  @include media-exsm {
+    font-size: 24px;
+    width: 100%;
+    // text-align: center;
+  }
+}
+
+.landing_google__red-text {
+  font-weight: bold;
+  display: block;
+
+  @include media-exsm {
+    white-space: nowrap;
+  }
+
+  @include media-sm {
+    white-space: normal;
+  }
+}
+
+.landing_google__list {
+  list-style: disc;
+  list-style-position: inside;
+  padding-bottom: 51px;
+  font-weight: bold;
+
+  @include media-exsm {
+    font-size: 16px;
+  }
+}
+
+.landing_google__item:first-child {
+  padding-bottom: 20px;
+
+  @include media-exsm {
+  }
+}
+
+.landing_google__bottom-img-wrap {
+  width: 100%;
+
+  @include media-max {
+  }
+
+  @include media-exsm {
+  }
+}
+
+.landing_google__img {
+  width: 111%;
+
+  @include media-max {
+    width: 100%;
+  }
+}
