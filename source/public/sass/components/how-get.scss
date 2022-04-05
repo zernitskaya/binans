@@ -1,0 +1,54 @@
+.how-get {
+  background-color: #2D3138;
+  text-align: center;
+  color: #fff;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 100px;
+  font-size: 14px;
+}
+
+.how-get__heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 60px;
+}
+
+.how-get__wrapper {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  background-image: url(../img/yell.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.how-get__text {
+  padding-bottom: 20px;
+}
+
+.how-get__text-k {
+  font-style: italic;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.how-get__btn {
+  @include active;
+  margin-bottom: 443px;
+  width: 254px;
+  height: 49px;
+  color: #2D3138;
+  background-color: #F3C218;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+
+  @include hover {
+    background-color: #F9D334;
+    color: #000;
+  }
+}
