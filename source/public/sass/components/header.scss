@@ -8,28 +8,13 @@
 }
 
 .header__wrap {
-  padding: 16px 0 18px 0;
+  padding: 10px 0 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @include media-exsm {
-    // padding: 5px;
-  }
 }
 
-.header__nav {
-  display: flex;
-
-  @include media-md {
-    // flex-direction: column;
-    // padding-top: 30px;
-    // align-items: center;
-    display: none;
-  }
-}
-
-.header__list {
+.menu__item {
   padding-left: 50px;
   text-transform: uppercase;
   font-size: 18px;
@@ -44,10 +29,115 @@
     justify-content: center;
     align-items: center;
   }
+
+  @include media-exsm {
+    padding: 0;
+  }
 }
 
 .header__link {
   @include hover {
     opacity: 0.7;
   }
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+
+.menu__btn {
+  @include media-exsm {
+    height: 20px;
+    display: flex;
+    width: 46px;
+    cursor: pointer;
+    z-index: 1;
+  }
+}
+
+.menu__btn>span,
+.menu__btn>span::before,
+.menu__btn>span::after {
+  @include media-exsm {
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+
+.menu__btn>span::before {
+  @include media-exsm {
+    content: '';
+    top: -8px;
+  }
+}
+
+.menu__btn>span::after {
+  @include media-exsm {
+    content: '';
+    top: 8px;
+  }
+}
+
+.menu__box {
+  display: flex;
+
+  @include media-md {
+    display: none;
+  }
+
+  @include media-exsm {
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+  }
+}
+
+.menu__list {
+  @include media-exsm {
+    margin: 0 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+.menu__list:not(:last-child) {
+  @include media-exsm {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.menu__item:hover {
+  color: #E8B22D;
+
+  @include media-exsm {
+    opacity: 1;
+  }
+}
+
+#menu__toggle:checked~.menu__btn>span {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked~.menu__btn>span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked~.menu__btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked~.menu__box {
+  visibility: visible;
+  left: 0;
 }
