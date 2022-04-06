@@ -5,11 +5,11 @@
 }
 
 @mixin focus() {
-    @media (hover) {
-      &:focus {
-        @content;
-      }
+  @media (hover) {
+    &:focus {
+      @content;
     }
+  }
 }
 
 @mixin active {
@@ -21,60 +21,57 @@
 
 @mixin media-xxx {
   @media (max-width: 1720px) {
-      @content;
+    @content;
   }
 }
 
 
 @mixin media-max {
-    @media (max-width: 1500px) {
-        @content;
-    }
+  @media (max-width: 1500px) {
+    @content;
+  }
 }
 
 @mixin media-xl {
-    @media (max-width: 1200px) {
-        @content;
-    }
+  @media (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin media-lg {
-    @media (max-width: 1070px) {
-        @content;
-    }
+  @media (max-width: 1070px) {
+    @content;
+  }
 }
 
 @mixin media-md {
-    @media (max-width: 980px) {
-        @content;
-    }
+  @media (max-width: 980px) {
+    @content;
+  }
 }
 
 @mixin media-exsm {
-    @media (max-width: 760px) {
-        @content;
-    }
+  @media (max-width: 760px) {
+    @content;
+  }
 }
 
 @mixin media-sm {
-    @media (max-width: 576px) {
-        @content;
-    }
+  @media (max-width: 576px) {
+    @content;
+  }
 }
 
 @mixin mob {
   @media (max-width: 320px) {
-      @content;
+    @content;
   }
 }
 
 @mixin landscape() {
-    @media screen and (min-width: 480px)
-    and (orientation: landscape)
-    and (max-height: 420px)
-    and (max-width: 900px) {
-        @content;
-    }
+  @media screen and (min-width: 480px) and (orientation: landscape) and (max-height: 420px) and (max-width: 900px) {
+    @content;
+  }
 }
 
 @mixin content {
@@ -85,6 +82,8 @@
   width: 90%;
 
   @include media-exsm {
-    width: 100%;
+    // width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

@@ -1,6 +1,10 @@
 .header {
   background-color: #00000063;
   color: #fff;
+
+  @include media-exsm {
+    background-color: #000;
+  }
 }
 
 .header__wrap {
@@ -8,15 +12,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include media-exsm {
+    // padding: 5px;
+  }
 }
 
 .header__nav {
   display: flex;
 
   @include media-md {
-    flex-direction: column;
-    padding-top: 30px;
-    align-items: center;
+    // flex-direction: column;
+    // padding-top: 30px;
+    // align-items: center;
+    display: none;
   }
 }
 

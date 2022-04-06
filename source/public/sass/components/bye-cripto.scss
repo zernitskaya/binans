@@ -4,6 +4,12 @@
   background-repeat: no-repeat;
   color: #fff;
   padding-top: 50px;
+
+  @include media-lg {
+    background-image: none;
+    background-color: #1B1F24;
+    text-align: center;
+  }
 }
 
 .bye-cripto__heading {
@@ -27,5 +33,19 @@
   @include hover {
     background-color: #F9D334;
     color: #000;
+  }
+
+  @include media-exsm {
+    margin: 10px;
+  }
+}
+
+
+.bye-cripto__img {
+  display: none;
+
+  @include media-exsm {
+    display: block;
+    width: 100%;
   }
 }

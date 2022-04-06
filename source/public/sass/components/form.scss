@@ -4,6 +4,11 @@
   padding: 40px 40px 0 40px;
   color: #fff;
   text-transform: uppercase;
+
+  @include media-lg {
+    width: 100%;
+    padding: 25px 20px;
+  }
 }
 
 .form__logo-wrap {
@@ -36,8 +41,8 @@
 .form__inputs {
   display: flex;
   flex-direction: column;
-  & > * {
+
+  &>* {
     margin: 20px 0;
   }
 }
-

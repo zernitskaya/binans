@@ -11,4 +11,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include media-exsm {
+    padding: 0;
+    font-size: 12px;
+  }
 }
