@@ -4,6 +4,7 @@
   padding: 40px 40px 0 40px;
   color: #fff;
   text-transform: uppercase;
+  flex-shrink: 0;
 
   @include media-lg {
     width: 100%;

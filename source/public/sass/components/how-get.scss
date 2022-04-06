@@ -10,6 +10,7 @@
   @include media-lg {
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 60px;
   }
 }
 
@@ -21,7 +22,7 @@
 
   @include media-lg {
     font-size: 24px;
-    padding-bottom: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -30,6 +31,9 @@
   color: #fff;
   font-size: 14px;
   position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,6 +60,10 @@
 
 .how-get__btn {
   @include active;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   width: 254px;
   height: 49px;
   color: #2D3138;
@@ -69,11 +77,6 @@
   @include hover {
     background-color: #F9D334;
     color: #000;
-
-  }
-
-  @include media-lg {
-    margin-left: 20%;
   }
 }
 
@@ -83,4 +86,16 @@
 
 .how-get__img {
   width: 100%;
+}
+
+
+.img__arrow-wrap {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  @include media-exsm {
+    bottom: 20px;
+    right: 25px;
+  }
 }

@@ -7,12 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>landing_google</title>
   <link rel="stylesheet" href="./css/style.min.css">
-  <!-- <link rel="stylesheet" href="./plugins/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="./plugins/bootstrap.min.css">
 </head>
 
 <body>
   <section class="main-wrap">
-    <header class="header">
+    <header class="header" id="header">
       <div class="header__wrap content">
         <a href="" class="header__link">
           <img src="./img/Binance_logo.png" alt="">
@@ -24,11 +24,19 @@
             <span></span>
           </label>
 
-
           <ul class="menu__box">
-            <li class="menu__list"><a class="menu__item" href="#"> УСЛОВИЯ</a></li>
+            <li class="menu__list"><a class="menu__item" href="#if"> УСЛОВИЯ</a></li>
             <li class="menu__list"><a class="menu__item" href="#ben">ПРЕИМУЩЕСТВА</a></li>
-            <li class="menu__list"><a class="menu__item" href="#">РУССКИЙ/eng</a></li>
+            <!-- <li class="menu__list"><a class="menu__item" href="#">РУССКИЙ/eng</a></li> -->
+            <li class="menu__list">
+              <div class="menu__item select-wrap">
+                <img class="select-wrap__img" src="./img/maseg.svg" alt="">
+                <select class="menu__select">
+                  <option value="ru">РУССКИЙ</option>
+                  <option value="ru">ENGLISH</option>
+                </select>
+                </img>
+            </li>
           </ul>
         </div>
       </div>
@@ -49,7 +57,7 @@
             </div>
           </div>
 
-          <form class="main__form form">
+          <form class="main__form form" id="form">
 
             <p class="form__text">
               Оформи карту от бинанс и получи <span class="main__text-yellow">бонус</span> от партнера
@@ -62,7 +70,7 @@
                 <input class="input-item__input" type="text" placeholder="Имя и Фамилия">
               </label>
 
-              <label class="input-item error">
+              <label class="input-item">
                 <input class="input-item__input" type="email" placeholder="EMAIL">
               </label>
 
@@ -87,7 +95,7 @@
             </fieldset>
 
             <fieldset class="form__btn">
-              <button class="btn">Получить карту</button>
+              <button class="form-btn">Получить карту</button>
             </fieldset>
           </form>
 
@@ -174,7 +182,8 @@
     </div>
   </section>
 
-  <section class="how-get">
+  <section class="how-get" id="if">
+
     <h2 class="how-get__heading">
       КАК ПОЛУЧИТЬ КАРТУ <span class="main__text-yellow">Binance</span> CRYPTOCARD?
     </h2>
@@ -203,9 +212,9 @@
       </p>
 
       <div class="how-get__btn-wrap">
-        <button class="how-get__btn">
+        <a href="#form" class="how-get__btn">
           оставить заявку
-        </button>
+        </a>
       </div>
     </div>
 
@@ -229,9 +238,9 @@
         работе. Тратьте свою криптовалюту в любое время и в любом месте.
       </p>
 
-      <button class="bye-cripto__btn">
+      <a href="#form" class="bye-cripto__btn">
         оставить заявку
-      </button>
+      </a>
     </div>
     <div class="bye-cripto__img-wrap">
       <img class="bye-cripto__img" src="./img/bye222.jpeg" alt="">
@@ -249,6 +258,12 @@
       </div>
     </div>
   </footer>
+
+  <div class="img__arrow-wrap">
+    <a href="#header">
+      <img class="img__arrow" src="./img/arrow.png" alt="">
+    </a>
+  </div>
 </body>
 
 </html>

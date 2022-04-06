@@ -36,7 +36,7 @@
   border: 1px solid #fff;
   border-radius: 3px;
   font-size: 15px;
-  padding: 6px;
+  padding: 0 16px;
   color: #ffffff;
   background-color: #282A2C;
 }
@@ -53,8 +53,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 78px;
+  width: 40px;
   height: 100%;
+
+  &+* {
+    padding-left: 40px;
+  }
 }
 
 
@@ -62,6 +66,7 @@
   font-size: 13px;
   color: #666;
 }
+
 .checkbox-item {
   display: flex;
   line-height: 22px;
